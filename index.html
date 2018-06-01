@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--这是一段注释。注释不会在浏览器中显示。-->
+<!--注释语句格式就是这样。-->
+
+  <title>我的第一个HTML页面</title>
+  <style>
+    h1 {
+      color: #333333;
+      font-size: 48px;
+      text-shadow: 3px 3px 3px #666666;
+    }
+  </style>
+  <script>
+    function change() {
+      document.getElementsByTagName('h1')[0].style.color = '#ff0000';
+    }
+  </script>
+</head>
+
+<body bgcolor="yellow"> <!--改变背景颜色命令-->
+<a href="https://www.baidu.com/" target="view_window">百度首页</a> <!--<a> 标签定义超链接-->
+  <h1 onclick="change()">Hello, world!</h1> <!--这是标题,用h1.2.3.。-->
+  <p>body 元素的内容会显示在浏览器中。</p> <!--定义段落用P-->
+  <p>title 元素的内容会显示在浏览器的标题栏中。</p>
+  <h1>春晓</h1>
+<hr /> <!--hr用来定义水平线一个hr代表一条线-->
+<p>春晓</p>
+<h2>春晓</h2>
+<hr />  
+
+  <h2 align="center">春晓</h2>
+  <p>
+    春眠不觉晓，
+      <br />处处闻啼鸟。<!--折行（换行）语句-->
+        <br />夜来风雨声，
+          <br />花落知多少。
+  </p>
+  
+</body>
+
+</html>
