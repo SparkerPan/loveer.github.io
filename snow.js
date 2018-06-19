@@ -1,6 +1,6 @@
 
 //    窗口大小
-    var oPageX=screen.width;
+    var oPageX=screen.width*0.5;
     var oPageY=screen.height;
     var aSnow=[];
 //    雪花模板
