@@ -13,7 +13,7 @@
         this.xsin=xsin;
         this.size=size;
         this.createSnow=function(){
-            this.node.style.position='absolute';
+            this.node.style.position='fixed';//'absolute';
             this.node.style.top=this.y+'px';
             this.node.style.left=this.x+'px';
             this.node.innerHTML='*';
