@@ -19,7 +19,7 @@
             this.node.innerHTML='*';
             document.body.appendChild(this.node);
         };
-        this.createSnow();
+        //this.createSnow();
         this.snowMove=function(){
             this.node.style.top=parseInt(this.node.style.top)+this.yspeed+'px';//垂直方向运动
             this.node.style.left=parseInt(this.node.style.left)+this.xsin*Math.sin(this.xspeed)+'px';
