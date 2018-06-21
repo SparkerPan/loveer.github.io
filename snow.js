@@ -1,8 +1,8 @@
 
 
 //    窗口大小
-    var oPageX=screen.width;
-    var oPageY=screen.height;
+    var oPageX=document.body.clientWidth;
+    var oPageY=document.body.clientHeight;
     var aSnow=[];
 //    雪花模板
     function snow(x,y,xspeed,yspeed,xsin,size){//x水平位置,y垂直位置,xspeed水平步距,yspeed垂直步距,xsin振幅,size雪花大小
