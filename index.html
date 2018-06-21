@@ -1,64 +1,52 @@
-<!DOCTYPE html>  
-<html>  
-    <head>  
-        <meta charset="UTF-8">  
-        <title>雪</title>  
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">  
-    <script src="jquery-1.8.3.min.js"></script>  
-    </head>  
-    <style>  
-        html{  
-            max-width: 720px;  
-              
-        }  
-        body{  
-            width: 100%;  
-            height: 100%;  
-            margin: 0 auto;  
-            overflow-x: hidden;  
-        }  
-        .snow{  
-            width: 100%;  
-            height: 100%;  
-            background: pink;  
-            overflow: hidden;  
-        }  
-        .snow_img{  
-            position: absolute;  
-            top: -50px;  
-            margin-left: 1px;  
-        }  
-    </style>  
-    <body>  
-        <div class="snow"></div>  
-        <script>  
-        $(function(){  
-            $('body').css("height",$(window).height())  
-            var wid=$(".snow").width();  
-            var html_snow="<img src='snow.png' class='snow_img'>";  
-            setInterval(function(){$(".snow").append(html_snow);snowFlow();},100);  
-            function snowFlow(){  
-                $(".snow_img").each(function(index){  
-                    var snow_time=(Math.random()*10+4)*1000;  
-                    var wid_snow=Math.floor(Math.random()*40+5)+'px';  
-                    var float_left=Math.random()*wid*2-wid+"px";  
-                    var wid_left=Math.random()*wid+"px";  
-                    if( $(this).css("margin-left")==1+"px"){  
-                    $(this).css("margin-left",wid_left);  
-                    }  
-                    if($(this).width()==0 || $(this).width()==50 ){  
-                        $(this).width(wid_snow);  
-                    }  
-                    $(this).animate({top:800+"px",left:float_left,},snow_time);  
-                    if($(this).offset().top==800){  
-                        $(this).remove();  
-                    }  
-                })  
-            }  
-        });  
-  
-    </script>  
-    </body>  
-</html>  
+<html>
+<meta charset="UTF-8">
+<head>
+<!--这是一段注释。注释不会在浏览器中显示。-->
+<!--注释语句格式就是这样<h1></h1>。X
+background-color:white;
+-->
+
+<title>finding you</title>
+    <style type="text/css">
+
+    h1 {
+      color: #A0F2A0;
+      font-size: 48px;
+      text-shadow: 5px 1px 9px #960000;
+    }
+    #header {
+       text-align:center;
+       padding:5px;
+	   margin:0px;
+	   
+    }
+        *{
+            margin:0;
+            padding:0;
+            font-family:"微软雅黑";
+            font-size:13px;
+            color:#ffffff;
+        }
+        body{            
+           
+            overflow-x: hidden;
+			 overflow-y: hidden;
+        }
+    </style>
+</head>
+<!--这是一段注释。注释不会在浏览器中显示。
+style="font-size:16px"
+
+-->
+<body  background="./body-background.jpg">
+
+<h1 style="text-align:center">Happy to meet you in the world!</h1>
+
+<hr/>
+
+<script src="./snow.js">
+</script>
+
+ </body> 
+
+</html>
