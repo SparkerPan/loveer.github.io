@@ -1,0 +1,19 @@
+#header{
+	-moz-user-select:none; 
+	-khtml-user-select:none; 
+	user-select:none;/*文本不可选*/
+	height:60px;
+	width:width;
+	line-height:60px;
+	text-align:center;
+	 /* background-color:blue;  */
+	background-image:url(./header-background.jpg);
+	font-size:28px;
+    color:#000;
+        }
+#left{
+	height:100px;
+	width:100px;
+	/* background-color:green; */
+	background-image:url(./Logo.png);
+}
